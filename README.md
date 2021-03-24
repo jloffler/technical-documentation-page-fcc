@@ -25,4 +25,5 @@ Build a website using HTML and CSS that is functionally similar to https://codep
  - 
 
 ## References
- - 
+ - MDN Combinators
+   - https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators
