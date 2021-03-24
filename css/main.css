@@ -1,0 +1,26 @@
+/* *** *** ***
+Code by jloffler
+March 2021
+Written for freeCodecamp Technical Documentation Page Project
+
+Swatch colours:
+
+*** *** *** */
+
+/* BASIC STYLES */
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
