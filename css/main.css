@@ -29,3 +29,7 @@ pre {
   overflow: auto;
   /* font monospace */
 }
+
+.red {
+  color: red;
+}
