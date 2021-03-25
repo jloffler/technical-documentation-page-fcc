@@ -1,7 +1,7 @@
 # Current Task
 
 # ToDo
- - 
+ - Check Todoist #tech-doc proj. for styling and colours
 
 # freeCodeCamp Technical Documentation Page Project
 
@@ -22,7 +22,8 @@ Build a website using HTML and CSS that is functionally similar to https://codep
  - Use some animation, and check for prefers reduced motion
  
 ## Things I learned
- - 
+ - &lt;pre> element
+ - &lt;code> element
 
 ## References
  - MDN Combinators

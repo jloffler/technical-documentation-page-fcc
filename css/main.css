@@ -30,6 +30,36 @@ pre {
   /* font monospace */
 }
 
-.red {
+code {
+  /* give some kind of background so code shows up okay in <p>*/
+}
+
+strong {}
+
+em {}
+
+li, ul, ol {}
+
+/* IN PAGE EXAMPLE STYLES */
+.example-box .red {
   color: red;
+}
+
+.example-box .red-top-border {
+  border-top: 5px solid red;
+}
+
+.example-box .style-like-h1 {
+
+}
+
+.example-box .bold-invert {
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  padding: .5em;
+}
+
+.example-box .word-wrap {
+  /*wrap code if too long*/
 }
