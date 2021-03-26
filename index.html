@@ -160,6 +160,27 @@
       <header>
         <h2>General Sibling Combinator</h2>
       </header>
+      <p>If you want to select siblings of an element even if they are not directly adjacent, then you can use the <strong>general sibling combinator</strong> (<code>~</code>). To select all <code>&lt;img></code> elements that come <em>anywhere</em> after <code>&lt;p></code> elements, we'd do this:</p>
+      <pre class="code-box"><code>p ~ img</code></pre>
+      <p>In the example below we are selecting all <code>&lt;p></code> elements that come after the <code>&lt;h1></code>, and even though there is a <code>&lt;div></code> in the document as well, the <code>&lt;p></code> that comes after it is selected.</p>
+      <div class="example-box">
+        <p><span class="style-like-h1">A heading</span></p>
+        <p><span class="bold-invert">I am a paragraph.</span></p>
+        <p>I am a div</p>
+        <p><span class="bold-invert">I am another paragraph.</span></p>
+      </div>
+      <pre class="code-box"><code>h1 ~ p {
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em;
+}</code></pre>
+      <pre class="code-box"><code>&lt;article>
+  &lt;h1>A heading&lt;/h1>
+  &lt;p>I am a paragraph&lt;/p>
+  &lt;div>I am a div&lt;/div>
+  &lt;p>I am another paragraph.&lt;/p>
+&lt;/article></code></pre>
     </section> <!-- #General Sibling Combinator -->
 
     <section id="Using_Combinators" class="main-section">
