@@ -1,8 +1,21 @@
 # Current Task
 
 # ToDo
- - Check Todoist #tech-doc proj. for styling and colours
+ - Style basic elements
+ - website colours
+   - Check Todoist #tech-doc proj. for styling and colours
+ - add reduced motion
+ - style all elements
+ - basic layout for mobile
+ - basic layout for desktop
+ - open/close and animate navbar
  - Add link to tech-doc page to page h1
+ - check all links
+ - proofread
+ - don't need a favicon for this site
+ - export github live
+ - check that html verifies
+ - check browser stack
 
 # freeCodeCamp Technical Documentation Page Project
 
@@ -25,6 +38,7 @@ Build a website using HTML and CSS that is functionally similar to https://codep
 ## Things I learned
  - &lt;pre> element
  - &lt;code> element
+ - more about CSS Combinators
 
 ## References
  - MDN Combinators
