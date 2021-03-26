@@ -2,6 +2,7 @@
 
 # ToDo
  - Check Todoist #tech-doc proj. for styling and colours
+ - Add link to tech-doc page to page h1
 
 # freeCodeCamp Technical Documentation Page Project
 
