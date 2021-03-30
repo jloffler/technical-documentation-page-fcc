@@ -8,11 +8,14 @@
  - style all elements
  - basic layout for mobile
  - basic layout for desktop
+ - .word-wrap wrap long code in this class
+ - show <code> </code>(space) as a dot?
  - open/close and animate navbar
+   - animations should come last in style sheet
  - Add link to tech-doc page to page h1
  - check all links
  - proofread
- - don't need a favicon for this site
+ - don't need a favicon for this site 
  - export github live
  - check that html verifies
  - check browser stack
@@ -39,6 +42,8 @@ Build a website using HTML and CSS that is functionally similar to https://codep
  - &lt;pre> element
  - &lt;code> element
  - more about CSS Combinators
+ - fix monospace font size reduction
+   - pre, code { font-family: monospace, monospace; font-size: 1em; }
 
 ## References
  - MDN Combinators

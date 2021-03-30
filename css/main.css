@@ -3,11 +3,26 @@ Code by jloffler
 March 2021
 Written for freeCodecamp Technical Documentation Page Project
 
-Swatch colours:
+Swatch colours: */
+:root {
+  --main-background-color: white;
+  --main-text-color: black;
+  --code-background-color: black;
+  --code-text-color: green;
+}
 
-*** *** *** */
+/* *** *** *** */
 
-/* BASIC STYLES */
+/* TABLE OF CONTENT */
+/*
+ * GENERAL STYLES
+ * IN PAGE EXAMPLE STYLES
+ * GENERAL LAYOUT
+ */
+
+/* General STYLES */
+/* ===== */
+
 html {
   font-size: 18px;
   scroll-behavior: smooth;
@@ -17,6 +32,11 @@ body {
   width: 100%;
   font-family: Arial, sans-serif;
   text-align: left;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  font-weight: 400;
 }
 
 * {
@@ -25,41 +45,100 @@ body {
   padding: 0;
 }
 
+h1,
+.style-like-h1
+{
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 600;
+}
+
+h3,
+p
+{
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
 pre {
-  overflow: auto;
-  /* font monospace */
+  overflow: auto; /* horizontal scrollbar */
 }
 
 code {
-  /* give some kind of background so code shows up okay in <p>*/
+  background-color: var(--code-background-color);
+  color: var(--code-text-color);
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
-strong {}
+strong {
+  font-weight: bolder;
+}
 
-em {}
+em {
+  font-style: italic;
+}
 
-li, ul, ol {}
+ul,
+ol 
+{
+  list-style-position: outside;
+  padding-left: 40px;
+  /*list-style-type: disc;*/
+  /*list-style-type: decimal;*/
+}
+
+/*
+a
+a:visit,
+a:ect
+{
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(0, 0, 238);
+  text-decoration: underline currentColor solid;
+}
+*/
+
+a:focus {
+
+}
 
 /* IN PAGE EXAMPLE STYLES */
-.example-box .red {
+/* ===== */
+
+.red {
   color: red;
 }
 
-.example-box .red-top-border {
+.red-top-border {
   border-top: 5px solid red;
 }
 
-.example-box .style-like-h1 {
-
-}
-
-.example-box .bold-invert {
+.bold-invert {
   font-weight: bold;
   background-color: #333;
   color: #fff;
   padding: .5em;
 }
 
-.example-box .word-wrap {
+.word-wrap {
   /*wrap code if too long*/
+}
+
+/* GENERAL LAYOUT */
+/* ===== */
+
+.example-box {
+
+}
+
+.code-box {
+
 }
