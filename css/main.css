@@ -18,6 +18,8 @@ Swatch colours: */
  * GENERAL STYLES
  * IN PAGE EXAMPLE STYLES
  * GENERAL AND MOBILE LAYOUT
+ * DESKTOP LAYOUT
+ * MEDIUM WIDTH SCREENS
  */
 
 /* General STYLES */
@@ -26,7 +28,7 @@ Swatch colours: */
 html {
   font-size: 18px;
   scroll-behavior: smooth;
-  --navbar-width: 300px;
+  --navbar-width: 278px;
   --nav-button-width: 25px;
 }
 
@@ -156,10 +158,6 @@ p {
   display: none;
 }
 
-#navbar {
-  
-}
-
 #navbar h1 {
   text-align: center;
 }
@@ -183,7 +181,6 @@ p {
 }
 
 .main-section {
-  max-width: 700px;
   padding: 0 1rem 1rem 1rem;
   margin: 2rem 0;
 }
@@ -198,4 +195,54 @@ p {
 
 .code-box code {
 
+}
+
+/* DESKTOP LAYOUT */
+/* ===== */
+
+@media screen and (min-width: 700px) {
+  #main-doc {
+    box-sizing: content-box;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .nav-button {
+    cursor: pointer;
+    z-index: 30;
+  }
+
+  .nav-button,
+  .nav-button-mask {
+    display: block;
+    width: var(--nav-button-width);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: var(--navbar-width);
+  }
+
+  .nav-button-mask {
+    background-color: blue;
+    z-index: 20;
+  }
+
+  #navbar {
+    width: var(--navbar-width);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+}
+
+/* MEDIUM WIDTH SCREENS */
+/* ===== */
+
+@media screen and (min-width: 700px) and (max-width: 1375px) {
+  #main-doc {
+    /* Offset content centering by navbar width */
+    padding: 0 0 0 calc(var(--navbar-width) + var(--nav-button-width));
+  }
 }

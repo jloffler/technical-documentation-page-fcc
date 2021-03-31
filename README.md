@@ -1,14 +1,17 @@
 # Current Task
- - basic layout for mobile
+ - basic layout for desktop
+   - WHAT SCREEN WIDTHS SHOULD CHANGE LAYOUT?
 
 # ToDo
- - basic layout for desktop
- - style all elements
+ - re-style #navbar links so that they are all button, not just text
+ - add text "open navbar" "close navbar" to .nav-button
  - hide nav-button from screen readers
  - website colours
    - Check Todoist #tech-doc proj. for styling and colours
- - pre code { colors }
- - .word-wrap wrap long code in this class
+ - .example-box -- see css tricks
+ - .code-box  -- see css tricks
+ - pre code { colors } -- see css tricks
+ - .word-wrap wrap long code in this .word-wrap class
  - open/close and animate navbar
    - animations should come last in style sheet
  - add reduced motion
