@@ -7,8 +7,8 @@ Swatch colours: */
 :root {
   --main-background-color: white;
   --main-text-color: black;
-  --code-background-color: black;
-  --code-text-color: green;
+  --code-background-color: grey;
+  --code-text-color: black;
 }
 
 /* *** *** *** */
@@ -17,7 +17,7 @@ Swatch colours: */
 /*
  * GENERAL STYLES
  * IN PAGE EXAMPLE STYLES
- * GENERAL LAYOUT
+ * GENERAL AND MOBILE LAYOUT
  */
 
 /* General STYLES */
@@ -26,6 +26,8 @@ Swatch colours: */
 html {
   font-size: 18px;
   scroll-behavior: smooth;
+  --navbar-width: 300px;
+  --nav-button-width: 25px;
 }
 
 body {
@@ -45,15 +47,14 @@ body {
   padding: 0;
 }
 
-h1,
-.style-like-h1
-{
+h1 {
   font-size: 2em;
   line-height: 1.5em;
   font-weight: 700;
 }
 
-h2 {
+h2,
+.style-like-heading {
   font-size: 1.5em;
   line-height: 1.5em;
   font-weight: 600;
@@ -76,6 +77,8 @@ code {
   color: var(--code-text-color);
   font-family: monospace, monospace;
   font-size: 1em;
+  border-radius: 4px;
+  padding: 0 2px;
 }
 
 strong {
@@ -91,23 +94,21 @@ ol
 {
   list-style-position: outside;
   padding-left: 40px;
-  /*list-style-type: disc;*/
-  /*list-style-type: decimal;*/
 }
 
-/*
-a
-a:visit,
-a:ect
-{
+a {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 238);
+  color: #0000ee;
   text-decoration: underline currentColor solid;
+  cursor: pointer;
 }
-*/
 
-a:focus {
+a:visited {
+  color: #551a8b;
+}
 
+a:active {
+  color: #e00;
 }
 
 /* IN PAGE EXAMPLE STYLES */
@@ -128,17 +129,73 @@ a:focus {
   padding: .5em;
 }
 
+
+
+
+
 .word-wrap {
   /*wrap code if too long*/
 }
 
-/* GENERAL LAYOUT */
+
+
+
+
+/* GENERAL AND MOBILE LAYOUT */
 /* ===== */
+
+h1,
+h2,
+h3,
+p {
+  margin: 1rem 0;
+}
+
+.nav-button,
+.nav-button-mask {
+  display: none;
+}
+
+#navbar {
+  
+}
+
+#navbar h1 {
+  text-align: center;
+}
+
+#navbar ul {
+  padding: 0;
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+#navbar li {
+  display: block;
+  list-style-type: none;
+  border-top: 1px solid var(--main-text-color);
+  padding: 0.5em 0;
+  padding-left: 20px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.main-section {
+  max-width: 700px;
+  padding: 0 1rem 1rem 1rem;
+  margin: 2rem 0;
+}
 
 .example-box {
 
 }
 
 .code-box {
+
+}
+
+.code-box code {
 
 }

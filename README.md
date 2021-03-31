@@ -1,17 +1,17 @@
 # Current Task
+ - basic layout for mobile
 
 # ToDo
- - Style basic elements
+ - basic layout for desktop
+ - style all elements
+ - hide nav-button from screen readers
  - website colours
    - Check Todoist #tech-doc proj. for styling and colours
- - add reduced motion
- - style all elements
- - basic layout for mobile
- - basic layout for desktop
+ - pre code { colors }
  - .word-wrap wrap long code in this class
- - show <code> </code>(space) as a dot?
  - open/close and animate navbar
    - animations should come last in style sheet
+ - add reduced motion
  - Add link to tech-doc page to page h1
  - check all links
  - proofread
