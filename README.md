@@ -1,5 +1,4 @@
 # Current Task
- - add text "open navbar" "close navbar" to .nav-button
 
 # ToDo
  - open/close and animate navbar

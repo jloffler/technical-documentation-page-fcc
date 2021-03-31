@@ -19,6 +19,7 @@ Swatch colours: */
  * IN PAGE EXAMPLE STYLES
  * GENERAL AND MOBILE LAYOUT
  * DESKTOP LAYOUT
+   * NAVBAR BUTTON PRESSED
  * MEDIUM WIDTH SCREENS
  */
 
@@ -225,7 +226,22 @@ p {
 
   .nav-button-mask {
     background-color: blue;
+    text-align: center;
     z-index: 20;
+  }
+
+  .nav-close-text,
+  .nav-open-text {
+    display: block;
+    width: 200px;
+    margin-top: calc(50vh + 100px);
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    color: red;
+  }
+
+  .nav-open-text {
+    display: none;
   }
 
   #navbar {
@@ -236,7 +252,18 @@ p {
     left: 0;
     z-index: 10;
   }
-}
+
+  /* NAVBAR BUTTON PRESS */
+  /* ===== */
+
+  .nav-button:checked ~ .nav-button-mask .nav-close-text {
+     display: none;
+  }
+  .nav-button:checked ~ .nav-button-mask .nav-open-text {
+    display: block;
+  }
+} /* @media screen > 700px */
+
 
 /* MEDIUM WIDTH SCREENS */
 /* ===== */
