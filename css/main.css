@@ -249,6 +249,7 @@ p {
 
   /* #navbar closed position */
   .nav-button:checked ~ #main-doc {
+    /* Offset content centering by only .nav-button width */
     padding: 0 0 0 var(--nav-button-width);
   }
 }

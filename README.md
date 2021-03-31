@@ -1,12 +1,11 @@
 # Current Task
- - re-style #navbar links so that they are all button, not just text
+ - add text "open navbar" "close navbar" to .nav-button
 
 # ToDo
- - add text "open navbar" "close navbar" to .nav-button
  - open/close and animate navbar
    - animations should come last in style sheet
    - hide checkbox
- - add reduced motion
+ - add reduced motion -- should come first in style sheet (desktop)
  - hide nav-button from screen readers
  - website colours
    - Check Todoist #tech-doc proj. for styling and colours
