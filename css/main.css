@@ -209,6 +209,7 @@ p {
 
   .nav-button {
     cursor: pointer;
+    /*opacity: 0;*/
     z-index: 30;
   }
 
@@ -244,5 +245,10 @@ p {
   #main-doc {
     /* Offset content centering by navbar width */
     padding: 0 0 0 calc(var(--navbar-width) + var(--nav-button-width));
+  }
+
+  /* #navbar closed position */
+  .nav-button:checked ~ #main-doc {
+    padding: 0 0 0 var(--nav-button-width);
   }
 }

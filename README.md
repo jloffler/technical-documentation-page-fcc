@@ -14,6 +14,7 @@
  - .word-wrap wrap long code in this .word-wrap class
  - open/close and animate navbar
    - animations should come last in style sheet
+   - hide checkbox
  - add reduced motion
  - Add link to tech-doc page to page h1
  - check all links
