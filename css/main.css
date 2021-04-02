@@ -280,7 +280,11 @@ p {
 /* MEDIUM WIDTH SCREENS */
 /* ===== */
 
-@media screen and (min-width: 700px) and (max-width: 1306px) {
+/*
+ * max-width = #main-doc + (2 * (#navbar + .nav-button) + some-for-looks
+ * 1356px = 750px + (2 * (278px + 25px)) + 40px
+ */
+@media screen and (min-width: 700px) and (max-width: 1396px) {
   #main-doc {
     /* Offset content centering by navbar width */
     padding: 0 0 0 calc(var(--navbar-width) + var(--nav-button-width));

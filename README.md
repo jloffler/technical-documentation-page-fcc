@@ -5,6 +5,7 @@
  - add :hover and :focus effect to .nav-button-mask
  - hide nav-button from screen readers
  - scroll navbar when viewport is too short
+ - fix width for @media desktop/medium desktop, navbar is overlapping content
  - hide .nav-button checkbox
  - website colours
    - Check Todoist #tech-doc proj. for styling and colours
@@ -44,10 +45,24 @@ Build a website using HTML and CSS that is functionally similar to https://codep
  - better understanding of CSS Combinators
  - fix monospace font size reduction
    - pre, code { font-family: monospace, monospace; font-size: 1em; }
- - transition to animate changes to some properties
+ - transition: to create animation
  - CSS transform property performs better than changing other properties
    - e.g. translate vs changing top/bottom
    - "Transforms perform better..." <https://css-tricks.com/css-animation-tricks/>
+
+## Note on Layout
+ 
+  On a viewport that is wide enough (> 1396 pixels) I wanted to have the main
+  content centered in the broswer window. 
+
+  However with the #navbar open this leads to a lot of whitespace to the right
+  of the content. So, even though the main content is centered on the viewport
+  (in theory for better readability) the whole page itself seems lopsided and
+  weighted to the left due to the extra whitespace on the right.
+
+  On a real website I would probably forego the large desktop view where the
+  main content is centered, and just use the middle width desktop view:
+  700 < 1396 pixels. Centering the main content only when the navbar is closed.
 
 ## References
  - MDN Combinators
