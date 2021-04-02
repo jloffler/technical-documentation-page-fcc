@@ -52,17 +52,17 @@ Build a website using HTML and CSS that is functionally similar to https://codep
 
   ### Note on Layout
    
-    On a viewport that is wide enough (> 1396 pixels) I wanted to have the main
-    content centered in the broswer window. 
+  On a viewport that is wide enough (> 1396 pixels) I wanted to have the main
+  content centered in the broswer window. 
 
-    However with the #navbar open this leads to a lot of whitespace to the right
-    of the content. So, even though the main content is centered on the viewport
-    (in theory for better readability) the whole page itself seems lopsided and
-    weighted to the left due to the extra whitespace on the right.
+  However with the #navbar open this leads to a lot of whitespace to the right
+  of the content. So, even though the main content is centered on the viewport
+  (in theory for better readability) the whole page itself seems lopsided and
+  weighted to the left due to the extra whitespace on the right.
 
-    On a real website I would probably forego the large desktop view where the
-    main content is centered, and just use the middle width desktop view:
-    700 < 1396 pixels. Centering the main content only when the navbar is closed.
+  On a real website I would probably forego the large desktop view where the
+  main content is centered, and just use the middle width desktop view:
+  700 < 1396 pixels. Centering the main content only when the navbar is closed.
 
 ## References
  - MDN Combinators
