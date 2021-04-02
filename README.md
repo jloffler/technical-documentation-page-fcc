@@ -1,13 +1,11 @@
 # Current Task
- - animate navbar
-   - animations should come last in (whole) style sheet
-   - hide checkbox
+ - add reduced motion -- should come first in style sheet (desktop)
 
 # ToDo
  - add :hover and :focus effect to .nav-button-mask
- - add reduced motion -- should come first in style sheet (desktop)
  - hide nav-button from screen readers
  - scroll navbar when viewport is too short
+ - hide .nav-button checkbox
  - website colours
    - Check Todoist #tech-doc proj. for styling and colours
  - .example-box -- see css tricks
@@ -43,9 +41,13 @@ Build a website using HTML and CSS that is functionally similar to https://codep
 ## Things I learned
  - &lt;pre> element
  - &lt;code> element
- - more about CSS Combinators
+ - better understanding of CSS Combinators
  - fix monospace font size reduction
    - pre, code { font-family: monospace, monospace; font-size: 1em; }
+ - transition to animate changes to some properties
+ - CSS transform property performs better than changing other properties
+   - e.g. translate vs changing top/bottom
+   - "Transforms perform better..." <https://css-tricks.com/css-animation-tricks/>
 
 ## References
  - MDN Combinators

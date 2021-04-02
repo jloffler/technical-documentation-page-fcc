@@ -257,10 +257,14 @@ p {
 
   /* NAVBAR BUTTON PRESS */
   /* ===== */
-  
+
+  .nav-panel {
+    transition: transform 0.5s ease-in-out;
+  }
+
   .nav-button:checked,
   .nav-button:checked ~ .nav-panel {
-    transform: translateX(calc(-1 * var(--navbar-width)));
+    transform: translate(calc(-1 * var(--navbar-width)));
   }
 
   .nav-button:checked ~ .nav-button-mask .nav-close-text {
@@ -280,6 +284,10 @@ p {
   #main-doc {
     /* Offset content centering by navbar width */
     padding: 0 0 0 calc(var(--navbar-width) + var(--nav-button-width));
+  }
+
+  #main-doc {
+    transition: padding 0.5s ease-in-out;
   }
 
   /* #navbar closed position */
