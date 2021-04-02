@@ -2,7 +2,7 @@
  - add reduced motion -- should come first in style sheet (desktop)
 
 # ToDo
- - add :hover and :focus effect to .nav-button-mask
+ - add :hover and :focus effect to .nav-button-mask (could use tranform: scale)
  - hide nav-button from screen readers
  - scroll navbar when viewport is too short
  - fix width for @media desktop/medium desktop, navbar is overlapping content
@@ -40,6 +40,12 @@ Build a website using HTML and CSS that is functionally similar to https://codep
  - Use some animation, and check for prefers reduced motion
  
 ## Things I learned
+ - Accessibility and animation (prefers reduced motion)
+   - when/which motion causes issues
+   - when motion can help understanding
+     - e.g. providing useful information to the user
+     - e.g. examples that can't be understood without motion/animation
+   - ways to provide a good user experience either way
  - &lt;pre> element
  - &lt;code> element
  - better understanding of CSS Combinators
@@ -58,7 +64,7 @@ Build a website using HTML and CSS that is functionally similar to https://codep
   However with the #navbar open this leads to a lot of whitespace to the right
   of the content. So, even though the main content is centered on the viewport
   (in theory for better readability) the whole page itself seems lopsided and
-  weighted to the left due to the extra whitespace on the right.
+  weighted to the left due to the extra whitespace on the right. Bad symmetry?
 
   On a real website I would probably forego the large desktop view where the
   main content is centered, and just use the middle width desktop view:
@@ -67,3 +73,9 @@ Build a website using HTML and CSS that is functionally similar to https://codep
 ## References
  - MDN Combinators
    - https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators
+ - Prefers reduced motion and accessible animation
+   - https://web.dev/prefers-reduced-motion/
+   - https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/
+   - https://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity/#section7
+   - https://css-tricks.com/introduction-reduced-motion-media-query/
+

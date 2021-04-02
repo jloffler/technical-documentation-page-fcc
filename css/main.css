@@ -15,6 +15,7 @@ Swatch colours: */
 
 /* TABLE OF CONTENT */
 /*
+ * PREFERES REDUCED MOTION
  * GENERAL STYLES
  * IN PAGE EXAMPLE STYLES
  * GENERAL AND MOBILE LAYOUT
@@ -22,6 +23,31 @@ Swatch colours: */
    * NAVBAR BUTTON PRESSED
  * MEDIUM WIDTH SCREENS
  */
+
+/* PREFERS REDUCED MOTION */
+/* ===== */
+
+@media screen and 
+  (prefers-reduced-motion: reduce),
+  (update: slow) /* devices with low refresh rate */
+{
+  *,
+  :before,
+  :after {
+    /* 
+     * mostly taken from:
+     * <https://web.dev/prefers-reduced-motion/> 
+     * <https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/>
+     */
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-delay: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+    background-attachment: initial !important;
+  }
+}
 
 /* General STYLES */
 /* ===== */
