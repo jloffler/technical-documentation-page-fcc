@@ -1,8 +1,7 @@
 # Current Task
- - add reduced motion -- should come first in style sheet (desktop)
+ - add :hover and :focus effect to .nav-button-mask (could use tranform: scale)
 
 # ToDo
- - add :hover and :focus effect to .nav-button-mask (could use tranform: scale)
  - hide nav-button from screen readers
  - scroll navbar when viewport is too short
  - fix width for @media desktop/medium desktop, navbar is overlapping content

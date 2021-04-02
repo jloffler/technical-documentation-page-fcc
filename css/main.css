@@ -27,13 +27,20 @@ Swatch colours: */
 /* PREFERS REDUCED MOTION */
 /* ===== */
 
+/*
+ * This is a template that I could use on other sites.
+ * It targets more things than are used on this website.
+ */
 @media screen and 
   (prefers-reduced-motion: reduce),
   (update: slow) /* devices with low refresh rate */
 {
   *,
-  :before,
-  :after {
+  ::before,
+  ::after,
+  :before, /* For old versions of IE */
+  :after /* For old versions of IE */
+  {
     /* 
      * mostly taken from:
      * <https://web.dev/prefers-reduced-motion/> 
