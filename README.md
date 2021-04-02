@@ -1,11 +1,13 @@
 # Current Task
+ - animate navbar
+   - animations should come last in (whole) style sheet
+   - hide checkbox
 
 # ToDo
- - open/close and animate navbar
-   - animations should come last in style sheet
-   - hide checkbox
+ - add :hover and :focus effect to .nav-button-mask
  - add reduced motion -- should come first in style sheet (desktop)
  - hide nav-button from screen readers
+ - scroll navbar when viewport is too short
  - website colours
    - Check Todoist #tech-doc proj. for styling and colours
  - .example-box -- see css tricks
