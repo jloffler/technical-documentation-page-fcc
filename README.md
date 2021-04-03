@@ -1,15 +1,12 @@
 # Current Task
- - scroll navbar when viewport is too short
+ - .example-box -- see css tricks
 
 # ToDo
- - website colours
-   - Check Todoist #tech-doc proj. for styling and colours
  - .code-box  -- see css tricks
  - add :hover and :focus effect to .nav-button-mask (could use tranform: scale)
  - hide nav-button from screen readers
  - fix width for @media desktop/medium desktop, navbar is overlapping content
  - hide .nav-button checkbox
- - .example-box -- see css tricks
  - pre code { colors } -- see css tricks
  - .word-wrap wrap long code in this .word-wrap class
  - Add link to tech-doc page to page h1

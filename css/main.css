@@ -2,16 +2,27 @@
 Code by jloffler
 March 2021
 Written for freeCodecamp Technical Documentation Page Project
-
-Swatch colours: */
-:root {
-  --main-background-color: white;
-  --main-text-color: black;
-  --code-background-color: grey;
-  --code-text-color: black;
-}
-
 /* *** *** *** */
+
+:root {
+/* Swatch Colours: */
+  --base-blue: #0B2974;
+  --lighter-blue: #13368C;
+  --darker-blue: #061F5D;
+  --platinum: #e5e4e2;
+  --darker-plat: #BBB9B5;
+
+/* Colour Variables: */
+  --main-background-color: var(--platinum);
+  --main-text-color: var(--base-blue);
+  --link-color: #0000ee; /* link default blue */
+  --link-visited-color: #551a8b; /* link default purple */
+  --link-active-color: #e00; /* link default red */
+  --nav-button-background-color: var(--lighter-blue);
+  --nav-button-text-color: var(--platinum);
+  --code-background-color: var(--darker-plat);
+  --code-text-color: var(--darker-blue);
+}
 
 /* TABLE OF CONTENT */
 /*
@@ -136,17 +147,17 @@ ol
 
 a {
   background-color: rgba(0, 0, 0, 0);
-  color: #0000ee;
+  color: var(--link-color);
   text-decoration: underline currentColor solid;
   cursor: pointer;
 }
 
 a:visited {
-  color: #551a8b;
+  color: var(--link-visited-color);
 }
 
 a:active {
-  color: #e00;
+  color: var(--link-active-color);
 }
 
 /* IN PAGE EXAMPLE STYLES */
@@ -192,6 +203,10 @@ p {
 .nav-button,
 .nav-button-mask {
   display: none;
+}
+
+#navbar {
+  background-color: var(--main-background-color);
 }
 
 #navbar h1 {
@@ -260,7 +275,7 @@ p {
   }
 
   .nav-button-mask {
-    background-color: blue;
+    background-color: var(--nav-button-background-color);
     text-align: center;
     z-index: 20;
   }
@@ -272,7 +287,7 @@ p {
     margin-top: calc(50vh + 100px);
     transform-origin: top left;
     transform: rotate(-90deg);
-    color: red;
+    color: var(--nav-button-text-color);
   }
 
   .nav-open-text {
