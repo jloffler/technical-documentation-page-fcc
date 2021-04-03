@@ -1,5 +1,4 @@
 # Current Task
- - style .code-box  -- see css tricks
 
 # ToDo
  - add :hover and :focus effect to .nav-button-mask (could use tranform: scale)

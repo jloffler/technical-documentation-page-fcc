@@ -26,6 +26,8 @@ Written for freeCodecamp Technical Documentation Page Project
   --example-background-color: var(--darker-plat);
   --example-text-color: var(--darker-blue);
   --example-border-color: var(--darkest-plat);
+  --code-box-background-color: var(--lighter-blue);
+  --code-box-text-color: var(--platinum);
 }
 
 /* TABLE OF CONTENT */
@@ -182,17 +184,9 @@ a:active {
   padding: .5em;
 }
 
-
-
-
-
 .word-wrap {
-  /*wrap code if too long*/
+  white-space: pre-wrap;
 }
-
-
-
-
 
 /* GENERAL AND MOBILE LAYOUT */
 /* ===== */
@@ -200,7 +194,7 @@ a:active {
 h2,
 h3,
 p {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1em 0;
 }
 
 .nav-button,
@@ -214,7 +208,7 @@ p {
 
 #navbar h1 {
   text-align: center;
-  margin: 1rem 0;
+  margin: 1em 0;
 }
 
 #navbar ul {
@@ -248,16 +242,25 @@ p {
   margin: 1rem 0;
   padding: 1em 1.5em 0 1em;
   border: 2px solid var(--example-border-color);
-  border-radius: 6px;
+  border-radius: 0.5rem;
 }
 
 .code-box {
-
+  background-color: var(--code-box-background-color);
+  color: var(--code-box-text-color);
+  width: max-content;
+  max-width: 100%;
+  margin: 1rem 0;
+  padding: 1em 1.5em 1em 1em;
+  border-radius: 0.5rem;
 }
 
 .code-box code {
-
+  background-color: inherit;
+  color: inherit;
 }
+
+
 
 /* DESKTOP LAYOUT */
 /* ===== */
