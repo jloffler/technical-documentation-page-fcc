@@ -230,7 +230,7 @@ p {
 }
 
 #navbar a:focus {
-  text-decoration: underline;
+  text-decoration: underline;  
 }
 
 .main-section {
@@ -263,8 +263,6 @@ p {
   background-color: inherit;
   color: inherit;
 }
-
-
 
 /* DESKTOP LAYOUT */
 /* ===== */
