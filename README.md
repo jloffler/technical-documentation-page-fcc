@@ -1,8 +1,7 @@
 # Current Task
- - .example-box -- see css tricks
+ - style .code-box  -- see css tricks
 
 # ToDo
- - .code-box  -- see css tricks
  - add :hover and :focus effect to .nav-button-mask (could use tranform: scale)
  - hide nav-button from screen readers
  - fix width for @media desktop/medium desktop, navbar is overlapping content
