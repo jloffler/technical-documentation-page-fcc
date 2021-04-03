@@ -216,6 +216,11 @@ p {
   border-bottom: 1px solid var(--main-text-color);
 }
 
+#navbar a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
 #navbar li {
   display: block;
   list-style-type: none;
@@ -224,9 +229,8 @@ p {
   padding-left: 20px;
 }
 
-#navbar a {
-  text-decoration: none;
-  color: var(--main-text-color);
+#navbar a:focus {
+  text-decoration: underline;
 }
 
 .main-section {
@@ -274,7 +278,7 @@ p {
 
   .nav-button {
     cursor: pointer;
-    /*opacity: 0;*/
+    opacity: 0;
     z-index: 30;
   }
 
@@ -290,6 +294,7 @@ p {
 
   .nav-button-mask {
     background-color: var(--nav-button-background-color);
+    color: var(--nav-button-text-color);
     text-align: center;
     z-index: 20;
   }
@@ -299,13 +304,18 @@ p {
     display: block;
     width: 200px;
     margin-top: calc(50vh + 100px);
+    color: inherit;
     transform-origin: top left;
     transform: rotate(-90deg);
-    color: var(--nav-button-text-color);
   }
 
   .nav-open-text {
     display: none;
+  }
+
+  .nav-button:focus ~ .nav-button-mask {
+    opacity: 0.8;
+    text-decoration: underline;
   }
 
   #navbar {
