@@ -20,7 +20,7 @@ Swatch colours: */
  * IN PAGE EXAMPLE STYLES
  * GENERAL AND MOBILE LAYOUT
  * DESKTOP LAYOUT
-   * NAVBAR BUTTON PRESSED
+   * NAVBAR BUTTON PRESS
  * MEDIUM WIDTH SCREENS
  */
 
@@ -286,6 +286,10 @@ p {
     top: 0;
     left: 0;
     z-index: 10;
+  }
+
+  #navbar {
+    overflow: auto;
   }
 
   /* NAVBAR BUTTON PRESS */
