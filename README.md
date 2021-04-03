@@ -1,25 +1,8 @@
-# Current Task
-
-# ToDo
- - add :hover and :focus effect to .nav-button-mask (could use tranform: scale)
- - hide nav-button from screen readers
- - fix width for @media desktop/medium desktop, navbar is overlapping content
- - hide .nav-button checkbox
- - pre code { colors } -- see css tricks
- - .word-wrap wrap long code in this .word-wrap class
- - Add link to tech-doc page to page h1
- - check all links
- - proofread
- - don't need a favicon for this site 
- - export github live
- - check that html verifies
- - check browser stack
-
 # freeCodeCamp Technical Documentation Page Project
 
 ## Live site on GitHub Pages
- - unfinished
- - completion date
+ - https://jloffler.github.io/technical-documentation-page-fcc/
+ - April 3, 2021
  
 ## Description of Project
 freeCodeCamp - https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page
@@ -50,6 +33,9 @@ Build a website using HTML and CSS that is functionally similar to https://codep
    - e.g. translate vs changing top/bottom
    - "Transforms perform better..." <https://css-tricks.com/css-animation-tricks/>
    - overflow: auto; creates a scroll bar on block elements with a explicit height/width
+ - Could not find a way to remove the nav-links from the tab focus order using just
+     CSS and the input checkbox.
+ - aria-label to give context to assistive technologies
 
   ### Note on Layout
    
@@ -73,4 +59,3 @@ Build a website using HTML and CSS that is functionally similar to https://codep
    - https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/
    - https://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity/#section7
    - https://css-tricks.com/introduction-reduced-motion-media-query/
-
